@@ -30,7 +30,7 @@ object StreamingKMeans {
     model.trainOn(trainingData)
     model.predictOnValues(testData.map(lp => (lp.label.toInt, lp.features))).print()
   
-    ssc.checkpoint("Users/apurvaanand/Desktop/Trial")
+    ssc.checkpoint("Users/apurvaanand/Desktop/")
     ssc.start()
     ssc.awaitTermination()
   }
